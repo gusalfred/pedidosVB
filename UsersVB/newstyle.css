@@ -1,0 +1,91 @@
+body{
+            overflow-y: auto;
+}
+.bglogin1{
+            /*background-image: url('../img/shipping2.jpg');*/
+            background: none;
+}
+
+.bg{
+            background-image: url('../img/fondo.png');
+            background-size: cover;
+            padding-bottom: 5%;
+            background-position: center;
+}
+
+
+#telflabel:after{
+            content: "";
+            opacity: 0;
+   }
+#telflabel.valid:after{
+            content: attr(data-content);
+            opacity: 1;
+}
+#telfOfilabel:after{
+            content: "";
+            opacity: 0;
+   }
+#telfOfilabel.valid:after{
+            content: attr(data-content);
+            opacity: 1;
+}
+/*checkbox solo*/
+[type="checkbox"] + label {
+  color: #ffffff ;
+}
+[type="checkbox"]+ label:before {
+  border-right: 2px solid #ffffff ;
+  border-bottom: 2px solid #ffffff ;
+  border-top: 2px solid #ffffff ;
+  border-left: 2px solid #ffffff ;
+}
+/*checked*/
+[type="checkbox"]:checked + label {
+  color: #ffff00 ;
+}
+[type="checkbox"]:checked + label:before {
+  border-right: 2px solid #ffff00 ;
+  border-bottom: 2px solid #ffff00 ;
+}
+/*inputs solos*/
+.input-field label{
+            color: white;
+}
+.input-field{
+            color: white
+}
+input[type=text]:not([readonly]) + label,
+textarea.materialize-textarea:not([readonly]) + label {
+  color: #ffffff  ;
+}
+/*inputs focus*/
+input[type=text]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ffff00  ;
+  box-shadow: 0 1px 0 0 #ffff00  ;
+  color: white;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #ffff00  ;
+}
+/*inputs valid*/
+input:not([type]):not([readonly]),
+input[type=text].valid:not([readonly]),
+textarea.materialize-textarea.valid:not([readonly]) {
+     border-bottom: 1px solid #ffff00;
+     box-shadow: 0 1px 0 0 #ffff00;
+     color: #9e9e9e ;
+   }
+/*selects*/
+.select-wrapper span.caret {
+  color: white;
+  font-size: 15px;
+  line-height: 15px;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+  color: black;
+}
